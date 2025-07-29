@@ -1,0 +1,9 @@
+.app {
+    display:flex;
+    border-color: 4px solid black;
+    background-color: lightblue;
+}
+
+.container1 {
+    background-color: aqua;
+}
