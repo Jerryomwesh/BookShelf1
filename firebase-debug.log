@@ -1,0 +1,61 @@
+[debug] [2025-07-30T12:49:42.058Z] ----------------------------------------------------------------------
+[debug] [2025-07-30T12:49:42.063Z] Command:       /home/jerry/.nvm/versions/node/v22.15.0/bin/node /home/jerry/.nvm/versions/node/v22.15.0/bin/firebase init --debug
+[debug] [2025-07-30T12:49:42.063Z] CLI Version:   14.11.1
+[debug] [2025-07-30T12:49:42.064Z] Platform:      linux
+[debug] [2025-07-30T12:49:42.064Z] Node Version:  v22.15.0
+[debug] [2025-07-30T12:49:42.064Z] Time:          Wed Jul 30 2025 15:49:42 GMT+0300 (East Africa Time)
+[debug] [2025-07-30T12:49:42.065Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-07-30T12:49:42.073Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-30T12:49:42.075Z] > authorizing via signed-in user (jerryomwesh@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/jerry/MORINGA/PROJECT_IDEAS/Phase_2/bookshelf
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-07-30T12:50:16.094Z] Checked if tokens are valid: true, expires at: 1753882696659
+[debug] [2025-07-30T12:50:16.096Z] Checked if tokens are valid: true, expires at: 1753882696659
+[debug] [2025-07-30T12:50:16.102Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2025-07-30T12:50:21.767Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2025-07-30T12:50:21.768Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project bookshelf-db-01-75a68 (bookshelf-db-01) 
+[info] 
+=== Hosting Setup
+[debug] [2025-07-30T12:50:27.288Z] Checked if tokens are valid: true, expires at: 1753882696659
+[debug] [2025-07-30T12:50:27.289Z] Checked if tokens are valid: true, expires at: 1753882696659
+[debug] [2025-07-30T12:50:27.290Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bookshelf-db-01-75a68 [none]
+[debug] [2025-07-30T12:50:32.456Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bookshelf-db-01-75a68 200
+[debug] [2025-07-30T12:50:32.457Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bookshelf-db-01-75a68 {"projectId":"bookshelf-db-01-75a68","projectNumber":"409506082346","displayName":"bookshelf-db-01","name":"projects/bookshelf-db-01-75a68","resources":{"hostingSite":"bookshelf-db-01-75a68"},"state":"ACTIVE","etag":"1_f79aca7d-e871-44dc-a2b1-42a6735dff19"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2025-07-30T12:51:06.142Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2025-07-30T12:51:06.405Z] *** [apiv2] error from fetch(https://www.gstatic.com/firebasejs/releases.json, {"headers":{},"method":"GET"}): FetchError: request to https://www.gstatic.com/firebasejs/releases.json failed, reason: 
+[debug] [2025-07-30T12:51:06.672Z] FetchError: request to https://www.gstatic.com/firebasejs/releases.json failed, reason: 
+    at ClientRequest.<anonymous> (/home/jerry/.nvm/versions/node/v22.15.0/lib/node_modules/firebase-tools/node_modules/node-fetch/lib/index.js:1501:11)
+    at ClientRequest.emit (node:events:518:28)
+    at ClientRequest.emit (node:domain:489:12)
+    at emitErrorEvent (node:_http_client:104:11)
+    at TLSSocket.socketErrorListener (node:_http_client:518:5)
+    at TLSSocket.emit (node:events:518:28)
+    at TLSSocket.emit (node:domain:489:12)
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+[error] 
+[error] Error: Failed to make request to https://www.gstatic.com/firebasejs/releases.json
