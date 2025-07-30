@@ -1,21 +1,12 @@
-import Expired from "./Expired";
-import Home from "./Home";
-import Mylibrary from "./Mylibrabry";
-import Search from "./Search";
-import Settings from "./Settings";
-
+import React from 'react';
+import Navbtn from '../../Buttons/Navbtn';
+import './Navbar.css';
 
 function Navbar() {
     return (
-        <div classname = "navbar">
-           <Home />
-           <Search />
-           <Mylibrary />
-           <Settings />
-           <Expired />
-
- 
-        </div>
+        <nav className="navbar">
+            <Navbtn />
+        </nav>
     );
 }
  export default Navbar;
