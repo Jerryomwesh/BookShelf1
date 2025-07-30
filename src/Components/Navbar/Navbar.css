@@ -1,0 +1,39 @@
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Pushes the two groups apart */
+  height: 100%;
+  padding: 0 10px;
+}
+
+.nav-group {
+  /* This is the top group of links */
+}
+
+.nav-group-bottom {
+ }
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  margin-bottom: 8px;
+  text-decoration: none;
+  color: #4a4a4a;
+  font-size: 1em;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.nav-link:hover {
+  background-color: #f4f4f9;
+  color: #1a1a1a;
+}
+
+.nav-link.active {
+  background-color: #6a5acd; /* SlateBlue */
+  color: white;
+}
+
